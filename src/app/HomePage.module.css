@@ -1,0 +1,91 @@
+.infoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin: 105px 0;
+}
+.infoArticle {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.text {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: var(--font-size-15);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-3px);
+  color: var(--color-light-gray);
+}
+
+.title {
+  padding: 16px 0 32px;
+  font-family: var(--font-sora);
+  font-size: var(--font-size-64);
+}
+.description {
+  padding-bottom: 48px;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: var(--font-size-16);
+
+  color: var(--color-light-gray);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 660px;
+  height: 610px;
+  padding: 16px;
+}
+.image {
+  position: absolute;
+  bottom: 0;
+}
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+}
+.image2 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.additionalSection {
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  padding: 20px;
+  height: 616px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 118px;
+}
+.doubleImageArticle {
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+.imagePlane {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+.imageEmoji {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.featureArticle {
+  width: 50%;
+}
+.featureArticle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+}

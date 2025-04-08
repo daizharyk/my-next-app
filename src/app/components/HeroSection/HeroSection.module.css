@@ -1,0 +1,121 @@
+.hero {
+  position: relative;
+  background: url("/images/Circles.png") center/contain no-repeat;
+  height: 100vh;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.smallText {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: var(--font-size-15);
+  letter-spacing: var(--letter-spacing-3px);
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  padding-bottom: 34px;
+}
+.titleWrapper {
+  width: 840px;
+}
+.title {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-120);
+  line-height: var(--line-height-64);
+  color: var(--color-white);
+}
+.experience {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: var(--font-sora);
+  font-size: var(--font-size-120);
+  line-height: var(--line-height-64);
+  color: var(--color-white);
+}
+.titleIcon {
+  margin-left: 8px;
+}
+.experienceIcon {
+  margin-right: 8px;
+}
+.subtitle {
+  margin-top: 37px;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height);
+  color: var(--color-light-gray);
+}
+.searchBar {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-16);
+  color: var(--color-dark-blue);
+  padding: 8px;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: var(--color-light-gray);
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  max-width: 162px;
+  padding-left: 10px;
+  border-left: 1px solid var(--color-light-gray);
+  font-size: var(--font-size-14);
+  color: var(--color-dark-blue);
+  transition: 0.2s;
+}
+.dropdown span {
+  font-family: var(--font-inter);
+  line-height: var(--line-height);
+  font-size: var(--font-size-16);
+  color: var(--color-dark-blue);
+}
+
+.imagesGrid {
+  position: absolute;
+  bottom: 50px;
+  gap: 110px;
+  display: flex;
+  margin-top: auto;
+}
+.nfts {
+    display: flex;
+
+    justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+.nfts img {
+    max-width: 100%;
+    height: auto;
+ 
+  }

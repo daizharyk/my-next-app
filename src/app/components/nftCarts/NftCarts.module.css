@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.title {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-32);
+  padding-bottom: 56px;
+}
+.description {
+  padding: 16px 0 20px 0;
+  font-family: var(--font-sora);
+  font-size: var(--font-size-16);
+}
+.card {
+  align-items: center;
+  padding: 40px;
+  width: 450px;
+  height: 840px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-midnight-blue);
+  border-radius: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 24px;
+}
+.timerWrapper {
+  display: flex;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-midnight-blue);
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+
+  flex-direction: column;
+}
+.bids {
+  color: var(--color-light-gray);
+}
+.timer {
+  position: relative;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+  padding-left: 24px;
+
+  line-height: var(--line-height);
+  color: var(--color-white);
+}
+.timer::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/LatestLiveAuctions/timer.png"); /* Укажи путь к своему PNG */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.image {
+  border-radius: 20px;
+  height: 355px;
+  width: 212px;
+}
+.infoBottom {
+  padding: 12px 0 64px 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+  justify-content: space-between;
+}
+
+.second {
+  opacity: 0.15;
+}
+
+.navButton {
+  font-size: 2rem;
+  position: absolute;
+  background: var(--color-midnight-blue-80);
+  border: none;
+  right: 40px;
+  bottom: 50%;
+
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+  transition: 0.3s all;
+}
+
+.navButton:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 16px;
+  background: url("/images/LatestLiveAuctions/scrolicon.png") no-repeat center
+    center;
+  background-size: contain;
+}
+
+.midleDescription {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-24);
+}
+.text {
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height);
+  color: var(--color-light-gray);
+}
+.imageMidle {
+  width: 450px;
+  height: 650px;
+  margin-top: -100px;
+}
+.nftImg {
+  border-radius: 20px;
+}
+.midleCard {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(to bottom, #1c1e30 0%, #08080e 100%);
+}
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  flex-grow: 1;
+}
+.nftCard {
+  display: flex;
+  height: 120px;
+
+  gap: 16px;
+}
+
+.nftInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.timerPriceWrapper,
+.bidsLikeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nftDescription {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-16);
+}
+.bids {
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+}
+.button {
+  margin-top: auto;
+}

@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_24pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_24pt-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/fonts/Sora-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-sora: "Sora", sans-serif;
+
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+  --font-size-48: 48px;
+  --font-size-64: 64px;
+  --font-size-120: 120px;
+
+  --line-height: 1.5;
+  --line-height-40: 1.2;
+  --line-height-48: 1.15;
+  --line-height-64: 1;
+  --letter-spacing: 0.2px;
+  --letter-spacing-3px: 3px;
+
+  --color-primary: #4745d0;
+  --color-secondary: #2a27c9;
+  --color-dark-blue: #060714;
+  --color-midnight-blue: #262840;
+  --color-midnight-blue-80: rgba(38, 40, 64, 0.8);
+
+  --color-light-gray: #7780a1;
+  --color-light-blue: #dde0e8;
+  --color-off-white: #f1f1f6;
+  --color-indigo: #2a27c9;
+  --color-blue: #514cff;
+  --color-blue-transparent: #514cff26;
+  --color-background: #27283a;
+  --color-indigo-opacity-10: rgba(
+    42,
+    39,
+    201,
+    0.1
+  ); /* Indigo с 10% прозрачностью */
+  --color-blue-opacity-15: rgba(
+    81,
+    76,
+    255,
+    0.15
+  ); /* Blue с 15% прозрачностью */
+  --color-turquoise: #76decc;
+  --color-pink: #ea6cbc;
+  --color-red: #fb4539;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing);
+  transition: 0.2s all;
+  color: var(--color-white);
+}
+body {
+  background-color: var(--color-dark-blue);
+}
+
+
+.price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  white-space: nowrap;
+  font-family: var(--font-sora);
+
+  color: var(--color-blue);
+  background-color: var(--color-blue-transparent);
+  border-radius: 4px;
+}
+
+.price.large {
+  font-size: var(--font-size-16);
+}
+
+.price.small {
+  font-size: var(--font-size-13);
+}
+.timer {
+  position: relative;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+  padding: 24px 0 24px 24px;
+  border-bottom: 1px solid var(--color-midnight-blue);
+  line-height: var(--line-height);
+  color: var(--color-white);
+}
+.timer::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/LatestLiveAuctions/timer.png"); /* Укажи путь к своему PNG */
+  background-size: contain;
+  background-repeat: no-repeat;
+}

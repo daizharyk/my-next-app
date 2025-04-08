@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    user-select: none;
+  }
+  
+  .icon {
+    transition: transform 0.2s ease;
+  }
+  
+  .wrapper:hover .icon {
+    transform: scale(1.1);
+  }
+  
+  .count {
+    font-family: var(--font-sora);
+    font-size: var(--font-size-14);
+    color: var(--color-white);
+  }
+  

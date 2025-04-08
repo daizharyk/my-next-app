@@ -1,0 +1,137 @@
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
+}
+.title {
+  margin-top: 65px;
+  font-family: var(--font-sora);
+  font-size: var(--font-size-36);
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 2rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.card {
+  max-width: 450px;
+
+  flex-shrink: 0;
+  border: 1px solid var(--color-midnight-blue);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s all;
+}
+.card:hover {
+  scale: 1.05;
+}
+.description {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-20);
+  color: var(--color-white);
+}
+.infoTop {
+  padding-top: 24px;
+  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: 400px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.navButton {
+  font-size: 2rem;
+  position: absolute;
+  background: var(--color-midnight-blue-80);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+  transition: 0.3s all;
+}
+
+.navButton.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/* Левый блок */
+.navButton.left {
+  left: 200px;
+}
+
+/* Правый блок */
+.navButton.right {
+  right: 200px;
+}
+
+.navButton.left::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 6px;
+  height: 16px;
+  background: url("/images/LatestLiveAuctions/scrolicon.png") no-repeat center
+    center;
+  background-size: contain;
+}
+
+.navButton.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 16px;
+  background: url("/images/LatestLiveAuctions/scrolicon.png") no-repeat center
+    center;
+  background-size: contain;
+}
+
+
+.infoBottom {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+  justify-content: space-between;
+}
+.avatars img {
+  margin-left: -10px;
+}

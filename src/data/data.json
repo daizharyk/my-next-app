@@ -1,0 +1,78 @@
+{
+  "latestLiveAuctions": [
+    {
+      "image": "/images/LatestLiveAuctions/1.png",
+      "text": "Tristique diam a, enim, eros tellus. Viverra etiam",
+      "price": "2.55 ETH",
+      "timer": "57:15 min left",
+      "bidders": "14 people are bidding",
+      "likes": 54
+    },
+    {
+      "image": "/images/LatestLiveAuctions/2.png",
+      "text": "Vulputate felis purus viverra morbi facilisi eget",
+      "price": "3.19 ETH",
+      "timer": "2:41 min left",
+      "bidders": "35 people are bidding",
+      "likes": 120
+    },
+    {
+      "image": "/images/LatestLiveAuctions/3.png",
+      "text": "Dui accumsan leo vestibulum ornare eu",
+      "price": "1.11 ETH",
+      "timer": "22:59 min left",
+      "bidders": "101 people are bidding",
+      "likes": 570
+    },
+    {
+      "image": "/images/LatestLiveAuctions/4.png",
+      "text": "Senectus adipiscing nascetur accumsan etiam",
+      "price": "1.63 ETH",
+      "timer": "37:01 min left",
+      "bidders": "12 people are bidding",
+      "likes": 98
+    },
+    {
+      "image": "/images/LatestLiveAuctions/5.png",
+      "text": "Mattis at diam lorem nisl nam sed sociis",
+      "price": "3.19 ETH",
+      "timer": "12:15 min left",
+      "bidders": "19 people are bidding",
+      "likes": 120
+    }
+  ],
+  "topNftDeals": [
+    {
+      "image": "/images/topnft/item.png",
+      "text": "Vulputate velit viverra volutpat volutpat tristique.",
+      "price": "1.25 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/topnft/item1.png",
+      "text": "Egestas blandit sit egestas non sed. Purus semper.",
+      "price": "1.25 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/topnft/item2.png",
+      "text": "Id ut consequat netus nec vel amet ut porta in augue.",
+      "price": "1.25 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/topnft/item3.png",
+      "text": "Sed et nibh felis integer tellus turpin.",
+      "price": "1.25 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    }
+  ]
+}
