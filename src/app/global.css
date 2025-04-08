@@ -86,7 +86,9 @@ body {
   background-color: var(--color-dark-blue);
 }
 
-
+hr {
+  border-bottom: 1px solid var(--color-midnight-blue);
+}
 .price {
   display: inline-flex;
   align-items: center;
@@ -126,4 +128,12 @@ body {
   background-image: url("/images/LatestLiveAuctions/timer.png"); /* Укажи путь к своему PNG */
   background-size: contain;
   background-repeat: no-repeat;
+}
+.overline {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-3px);
+  color: var(--color-light-gray);
+  text-transform: uppercase;
+  font-size: var(--font-size-15);
 }

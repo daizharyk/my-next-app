@@ -1,0 +1,92 @@
+.section {
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.filterButtons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 0 72px 0;
+}
+
+.grid {
+  display: flex;
+
+  gap: 24px;
+}
+
+.title {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-36);
+  padding-top: 16px;
+}
+
+.filterButton {
+  border-radius: 8px;
+  font-family: var(--font-sora);
+  font-size: var(--font-size-16);
+  color: var(--color-light-gray);
+  background-color: transparent;
+  border: 2px solid var(--color-midnight-blue);
+  padding: 8px;
+}
+.filterButton:hover {
+  border: 2px solid var(--color-light-gray);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.nftDescription {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-16);
+}
+.image {
+  border-radius: 20px;
+}
+.timer {
+  position: relative;
+  font-family: var(--font-inter);
+  padding: 16px 0;
+  font-size: var(--font-size-14);
+  padding-left: 24px;
+
+  line-height: var(--line-height);
+  color: var(--color-white);
+}
+.timer::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/LatestLiveAuctions/timer.png"); /* Укажи путь к своему PNG */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.timerPriceWrapper,
+.bidsLikeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bids {
+  font-family: var(--font-inter);
+  font-size: var(--font-size-14);
+}
+.bidsLikeWrapper {
+  border-top: 1px solid var(--color-midnight-blue);
+  padding: 16px 0;
+}
+.buttonWrapper {
+  padding-top: 72px;
+}

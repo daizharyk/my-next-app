@@ -58,12 +58,13 @@
   display: flex;
   max-width: 1400px;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
   height: 616px;
   margin: 0 auto;
   justify-content: space-between;
   gap: 118px;
 }
+
 .doubleImageArticle {
   height: 100%;
   position: relative;
@@ -88,4 +89,46 @@
   display: flex;
   flex-direction: column;
   row-gap: 56px;
+}
+
+.featureTitle {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-64);
+  line-height: 1;
+  padding: 16px 0 32px 0;
+}
+
+.featureDescription {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: var(--color-light-gray);
+  line-height: var(--line-height);
+  font-size: var(--font-size-16);
+}
+.featureList {
+  display: flex;
+  gap: 24px;
+}
+.featureItem {
+  width: 234px;
+}
+
+.featureHeading {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-20);
+}
+
+.featureText {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: var(--font-size-16);
+  line-height: var(--line-height);
+  color: var(--color-light-gray);
+}
+.featureIcon {
+  margin-bottom: 24px;
+}
+.featureButtons {
+  display: flex;
+  gap: 16px;
 }

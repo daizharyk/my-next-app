@@ -74,5 +74,55 @@
       "bidders": "101 people are bidding",
       "likes": 0
     }
+  ],
+  "mostPopularLiveAuctions": [
+    {
+      "image": "/images/live-auctions/image.png",
+      "text": "Faucibus habitasse at et platea massa mauris",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/live-auctions/image-1.png",
+      "text": "Diam purus sagittis nisl e rat mauris.",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/live-auctions/item.png",
+      "text": "Nascetur mauris viverra vel id id sem leo",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/live-auctions/item-1.png",
+      "text": "Velit, fusce id non dui amet amet maecenas",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/live-auctions/item-2.png",
+      "text": "Tellus duis neque fringilla pulvinar gravida",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    },
+    {
+      "image": "/images/live-auctions/item-3.png",
+      "text": "Odio lacus neque ultrices purus eget",
+      "price": "2.55 ETH",
+      "timer": "22:59",
+      "bidders": "101 people are bidding",
+      "likes": 0
+    }
   ]
 }

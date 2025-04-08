@@ -1,9 +1,11 @@
 import Image from "next/image";
 import AuctionCarousel from "./components/AuctionCarousel/AuctionCarousel";
 import Button from "./components/Button";
+import MostPopularLiveAuctions from "./components/MostPopularLiveAuctions/MostPopularLiveAuctions";
 import HeroSection from "./components/HeroSection/HeroSection";
 import NftCarts from "./components/nftCarts/NftCarts.jsx";
 import styles from "./HomePage.module.css";
+import Counter from "./components/counter/Counter";
 
 export default function HomePage() {
   return (
@@ -63,7 +65,7 @@ export default function HomePage() {
 
         <article className={styles.featureArticle}>
           <div className={styles.wrapper}>
-            <p className={styles.overline}>Overline</p>
+            <p className="overline">Overline</p>
             <h2 className={styles.featureTitle}>
               Habitant tristique aliquam in vel scelerisque
             </h2>
@@ -108,6 +110,9 @@ export default function HomePage() {
           </div>
         </article>
       </section>
+      <hr />
+      <MostPopularLiveAuctions />
+      <Counter />
     </>
   );
 }

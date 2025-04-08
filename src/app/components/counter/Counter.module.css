@@ -1,0 +1,29 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 150px;
+}
+.counterItem {
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  margin-bottom: 16px;
+}
+
+.number {
+  font-family: var(--font-sora);
+  font-size: var(--font-size-48);
+  line-height: var(--line-height-48);
+}
+.label {
+  font-family: var(--font-inter);
+  font-size: var(--font-size-16);
+  font-weight: 400;
+  line-height: var(--line-height);
+  color: var(--color-light-gray);
+}
