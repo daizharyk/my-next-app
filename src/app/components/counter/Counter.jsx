@@ -51,7 +51,7 @@ const Counter = () => {
           key={index}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.3, delay: index * 0.2 }}
+          transition={{ duration: 0.2}}
         >
           <Image
             src={item.icon}
@@ -64,7 +64,7 @@ const Counter = () => {
             {startCount && (
               <CountUp
                 end={item.value}
-                duration={2}
+                duration={1}
                 separator=","
                 decimals={item.decimals || 0}
               />

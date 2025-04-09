@@ -113,6 +113,31 @@ export default function HomePage() {
       <hr />
       <MostPopularLiveAuctions />
       <Counter />
+      <section className={styles.featureSection}>
+        <article className={styles.wrapper}>
+          <p className={`${styles.overline} overline`}>Overline</p>
+          <h3 className={styles.title}>
+            Cursus vitae sollicitudin donec nascetur. Join now
+          </h3>
+          <p className={styles.featureDescription}>
+            Donec volutpat bibendum justo, odio aenean congue est porttitor ut.
+            Mauris vestibulum eros libero amet tincidunt.
+          </p>
+          <div className={styles.featureButtons}>
+            <Button text="Get started" type="primary" />
+            <Button text="Learn more" type="secondary" />
+          </div>
+        </article>
+        <article className={styles.imageWrapper}>
+          <Image
+            src="/images/Users.png"
+            alt="Users illustration"
+            width={500}
+            height={400}
+            className={styles.image}
+          />
+        </article>
+      </section>
     </>
   );
 }
