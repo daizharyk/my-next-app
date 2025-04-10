@@ -24,7 +24,7 @@ export default function SmoothScroll() {
 
     // Обработчики для touch событий
     window.addEventListener('touchstart', () => {
-      lenis.stop()
+      lenis.start()
     })
     window.addEventListener('touchmove', () => {
       lenis.stop()
