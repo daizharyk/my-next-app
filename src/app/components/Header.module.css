@@ -1,42 +1,134 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  gap: 20px;
+}
 
+.topRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 117px;
-  padding: 20px;
-  text-align: center;
-  padding: 50px 40px;
+  flex-wrap: wrap;
   position: relative;
 }
 
-.title {
-  font-size: 24px;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 64px;
-  font-family: var(--font-sora);
-  font-size: var(--font-size-16);
-}
-
+/* Логотип слева */
 .logo {
   position: absolute;
-  left: 40px;
+  left: 0;
+  top: 10px;
+}
+
+/* Кнопки справа */
+.actions {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+/* Навигация по центру */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-light-gray);
+  transition: all 0.2s ease;
+}
+
+.bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar2 {
+  opacity: 0;
+}
+
+.bar3 {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 .nav a {
   color: var(--color-light-gray);
+  font-family: var(--font-sora);
 }
+
 .nav a:hover {
   color: var(--color-light-blue);
 }
-.actions {
-  display: flex;
-  position: absolute;
-  right: 40px;
-  gap: 16px;
+.actionsNav {
+  display: none;
+}
+@media (max-width: 520px) {
+  .burger {
+    display: flex;
+    position: absolute;
+
+    right: 0;
+  }
+  .header {
+    padding: 20px;
+  }
+
+  .topRow {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    position: static;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+    position: absolute;
+
+    justify-content: flex-start;
+    right: 0;
+    top: 0;
+    background-color: var(--color-dark-blue);
+    border-left: 2px solid var(--color-background);
+    z-index: 1;
+    padding: 50px 20px;
+    margin: 0;
+    gap: 20px;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 70%;
+  }
+  .nav a {
+    color: var(--color-white);
+  }
+  .nav.open {
+    transform: translateX(0);
+  }
+  .actionsNav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }

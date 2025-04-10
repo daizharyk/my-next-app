@@ -6,6 +6,9 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import NftCarts from "./components/nftCarts/NftCarts.jsx";
 import styles from "./HomePage.module.css";
 import Counter from "./components/counter/Counter";
+import data from "@/data/data.json";
+
+const item = data["nftImages"];
 
 export default function HomePage() {
   return (
@@ -112,11 +115,11 @@ export default function HomePage() {
       </section>
       <hr />
       <MostPopularLiveAuctions />
-      <Counter />
+      {/* <Counter />
       <section className={styles.featureSection}>
-        <article className={styles.wrapper}>
+        <article className={styles.featureWrapper}>
           <p className={`${styles.overline} overline`}>Overline</p>
-          <h3 className={styles.title}>
+          <h3 className={styles.feature_title}>
             Cursus vitae sollicitudin donec nascetur. Join now
           </h3>
           <p className={styles.featureDescription}>
@@ -128,16 +131,26 @@ export default function HomePage() {
             <Button text="Learn more" type="secondary" />
           </div>
         </article>
-        <article className={styles.imageWrapper}>
+        <article className={styles.imageUsersWrapper}>
           <Image
             src="/images/Users.png"
             alt="Users illustration"
-            width={500}
-            height={400}
-            className={styles.image}
+            width={992}
+            height={426}
+            className={styles.imageUsers}
           />
         </article>
       </section>
+      <section className={styles.nftList}>
+        {item.map((item, index) => {
+          return (
+            <article className={styles.nft} key={index}>
+              <Image src={item.image} width={89} height={89} />
+              <p>{item.price}</p>
+            </article>
+          );
+        })}
+      </section> */}
     </>
   );
 }

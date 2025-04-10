@@ -7,25 +7,10 @@ import LikeButton from "../LikeButton/LikeButton";
 
 export default function AuctionCarousel() {
   const scrollRef = useRef(null);
-  const [startTouch, setStartTouch] = useState(0);
+
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
-
-  const scrollAmount = 800;
-
-  const handleTouchStart = (e) => {
-    setStartTouch(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    const touchMove = e.touches[0].clientX;
-    const diff = startTouch - touchMove;
-
-    if (Math.abs(diff) > 30) {
-      scroll(diff > 0 ? "right" : "left");
-      setStartTouch(touchMove);
-    }
-  };
+  const [scrollAmount, setScrollAmount] = useState(800);
 
   const items = auctionData["latestLiveAuctions"];
 
@@ -57,6 +42,19 @@ export default function AuctionCarousel() {
     checkScrollPosition();
   };
   useEffect(() => {
+    const updateScrollAmount = () => {
+      const width = window.innerWidth;
+      setScrollAmount(width >= 520 ? 300 : 800);
+    };
+
+    updateScrollAmount(); 
+    window.addEventListener("resize", updateScrollAmount);
+
+    return () => window.removeEventListener("resize", updateScrollAmount);
+  }, []);
+
+  
+  useEffect(() => {
     checkScrollPosition();
   }, []);
   return (
@@ -70,12 +68,7 @@ export default function AuctionCarousel() {
           onClick={() => handleButtonClick("left")}
         ></button>
 
-        <div
-          className={styles.carousel}
-          ref={scrollRef}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-        >
+        <div className={styles.carousel} ref={scrollRef}>
           {items.concat(items, items).map((item, index) => (
             <article className={styles.card} key={index}>
               <img src={item.image} alt={item.title} className={styles.image} />
@@ -93,7 +86,10 @@ export default function AuctionCarousel() {
                   <img src="/images/users/04.png" alt="User 4" />
                 </div>
                 <p className={styles.bids}>{item.bidders}</p>
-                <LikeButton initialLikes={item.likes} />
+                <LikeButton
+                  initialLikes={item.likes}
+                  className={styles.likeButton}
+                />
               </div>
             </article>
           ))}

@@ -82,13 +82,21 @@
   transition: 0.2s all;
   color: var(--color-white);
 }
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
 body {
   background-color: var(--color-dark-blue);
 }
 
 hr {
-  border-bottom: 1px solid var(--color-midnight-blue);
+  background-color: var(--color-midnight-blue);
+  height: 1px;
+  border: none;
 }
+
 .price {
   display: inline-flex;
   align-items: center;
@@ -125,7 +133,7 @@ hr {
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url("/images/LatestLiveAuctions/timer.png"); /* Укажи путь к своему PNG */
+  background-image: url("/images/LatestLiveAuctions/timer.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -136,4 +144,10 @@ hr {
   color: var(--color-light-gray);
   text-transform: uppercase;
   font-size: var(--font-size-15);
+}
+
+@media (max-width: 520px) {
+  .price.large {
+    font-size: var(--font-size-13);
+  }
 }

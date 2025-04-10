@@ -19,7 +19,7 @@ export default function HeroSection() {
             A new NFT
             <Image
               className={styles.titleIcon}
-              src="/images/Vector.png"
+              src="/images/Vector1.png"
               alt="Title Icon"
               width={37}
               height={87}
@@ -28,7 +28,7 @@ export default function HeroSection() {
           <h2 className={styles.experience}>
             <Image
               className={styles.experienceIcon}
-              src="/images/Frame.png" // Укажи правильный путь
+              src="/images/Frame.png" 
               alt="Frame"
               width={62}
               height={62}
@@ -47,7 +47,7 @@ export default function HeroSection() {
             <span>Category</span>
             <Image
               className={styles.dropdownIcon}
-              src="/images/ArrowDownIcon.png" // Укажи правильный путь
+              src="/images/ArrowDownIcon.png" 
               alt="ArrowDownIcon"
               width={10}
               height={10}
@@ -56,7 +56,7 @@ export default function HeroSection() {
 
           <Image
             className={styles.searchIcon}
-            src="/images/SearchIcon.png" // Укажи правильный путь
+            src="/images/SearchIcon.png" 
             alt="SearchIcon"
             width={24}
             height={24}

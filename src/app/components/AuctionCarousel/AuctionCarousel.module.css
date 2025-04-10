@@ -24,17 +24,18 @@
   gap: 24px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   padding: 2rem 0;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .carousel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }
 
 .card {
   max-width: 450px;
-
+  position: relative;
   flex-shrink: 0;
   border: 1px solid var(--color-midnight-blue);
   padding: 24px;
@@ -123,7 +124,6 @@
   background-size: contain;
 }
 
-
 .infoBottom {
   padding-top: 24px;
   display: flex;
@@ -134,4 +134,71 @@
 }
 .avatars img {
   margin-left: -10px;
+}
+
+@media (max-width: 520px) {
+  .card {
+    max-width: 150px;
+
+    padding: 8px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    row-gap: 30px;
+  }
+  .title {
+    margin-top: 30px;
+    font-size: var(--font-size-32);
+  }
+  .carousel {
+    gap: 12px;
+
+    padding: 1rem 0;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .description {
+    font-size: var(--font-size-16);
+  }
+  .infoTop {
+    padding-top: 14px;
+    gap: 14px;
+
+    flex-direction: column;
+  }
+
+  .navButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navButton.left {
+    left: 20px;
+  }
+
+  /* Правый блок */
+  .navButton.right {
+    right: 20px;
+  }
+
+  .infoBottom {
+    padding-top: 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    font-size: var(--font-size-13);
+  }
+  .avatars img {
+    margin-left: -20px;
+  }
+  .likeButton {
+    position: absolute;
+    bottom: 0;
+  }
 }
