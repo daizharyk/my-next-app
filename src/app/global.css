@@ -87,11 +87,12 @@ body {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   background-color: var(--color-dark-blue);
   overflow: hidden;
-  -webkit-overflow-scrolling: touch;
+
 }
 html {
   scroll-behavior: auto;
