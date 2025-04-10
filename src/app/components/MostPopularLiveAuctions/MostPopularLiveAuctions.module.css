@@ -69,7 +69,7 @@
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url("/images/LatestLiveAuctions/timer.png"); 
+  background-image: url("/images/LatestLiveAuctions/timer.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -89,4 +89,67 @@
 }
 .buttonWrapper {
   padding-top: 72px;
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 20px;
+
+    max-width: 100%;
+
+    margin: 0;
+  }
+
+  .filterButtons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 30px 0 52px 0;
+  }
+
+  .grid {
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .title {
+    font-size: var(--font-size-24);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 150px;
+  }
+  .grid::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .grid::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-blue);
+    border-radius: 10px;
+  }
+
+  .nftDescription {
+    font-size: var(--font-size-14);
+  }
+
+  .buttonWrapper {
+    padding-top: 20px;
+  }
+  .image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
 }

@@ -27,3 +27,38 @@
   line-height: var(--line-height);
   color: var(--color-light-gray);
 }
+@media (max-width: 520px) {
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 50px 20px;
+  }
+  .counterItem {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .icon {
+    margin-bottom: 16px;
+  }
+
+  .number {
+    font-family: var(--font-sora);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-48);
+    
+  }
+  .label {
+    font-family: var(--font-inter);
+    font-size: var(--font-size-16);
+    font-weight: 400;
+    line-height: var(--line-height);
+    color: var(--color-light-gray);
+  }
+}

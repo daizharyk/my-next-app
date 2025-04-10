@@ -31,17 +31,18 @@ export default function Header() {
           ></span>
         </div>
       </div>
-
-      <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-        <Link href="#">Auctions</Link>
-        <Link href="#">Roadmap</Link>
-        <Link href="#">Discover</Link>
-        <Link href="#">Community</Link>
-        <div className={styles.actionsNav}>
-          <Button text="Contact us" type="secondary" />
-          <Button text="My account" type="primary" />
-        </div>
-      </nav>
+      <div className={styles.navWrapper}>
+        <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+          <Link href="#">Auctions</Link>
+          <Link href="#">Roadmap</Link>
+          <Link href="#">Discover</Link>
+          <Link href="#">Community</Link>
+          <div className={styles.actionsNav}>
+            <Button text="Contact us" type="secondary" />
+            <Button text="My account" type="primary" />
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

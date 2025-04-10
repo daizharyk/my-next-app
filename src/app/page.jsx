@@ -115,7 +115,7 @@ export default function HomePage() {
       </section>
       <hr />
       <MostPopularLiveAuctions />
-      {/* <Counter />
+      <Counter />
       <section className={styles.featureSection}>
         <article className={styles.featureWrapper}>
           <p className={`${styles.overline} overline`}>Overline</p>
@@ -145,12 +145,12 @@ export default function HomePage() {
         {item.map((item, index) => {
           return (
             <article className={styles.nft} key={index}>
-              <Image src={item.image} width={89} height={89} />
+              <Image className={styles.imegaNft} src={item.image} width={89} height={89} alt="image" />
               <p>{item.price}</p>
             </article>
           );
         })}
-      </section> */}
+      </section>
     </>
   );
 }

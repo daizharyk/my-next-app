@@ -230,7 +230,7 @@
 
   .additionalSection {
     max-width: 100%;
-align-items: flex-start;
+    align-items: flex-start;
     padding: 20px;
     height: auto;
     margin: 0;
@@ -270,19 +270,17 @@ align-items: flex-start;
   }
 
   .featureTitle {
-
     font-size: var(--font-size-24);
 
     padding: 16px 0;
   }
 
   .featureDescription {
-
     font-size: var(--font-size-16);
   }
   .featureList {
     display: flex;
-    
+
     gap: 14px;
   }
   .featureItem {
@@ -293,22 +291,81 @@ align-items: flex-start;
   }
 
   .featureHeading {
-
     font-size: var(--font-size-14);
   }
 
   .featureText {
-  
     font-size: var(--font-size-13);
-
   }
   .featureIcon {
     margin-bottom: 24px;
   }
   .featureButtons {
     display: flex;
-justify-content: center;
+    justify-content: center;
     gap: 16px;
     padding-top: 0;
+  }
+
+  .featureSection {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .imageUsersWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .featureWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    row-gap: 10px;
+    z-index: 1;
+  }
+
+  .feature_title {
+    padding: 16px 0 32px;
+
+    font-size: var(--font-size-36);
+  }
+
+  .nftList {
+    margin: 30px 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    padding: 20px;
+    gap: 12px;
+  }
+  .nft {
+    scroll-snap-align: start;
+    gap: 8px;
+  }
+  .nftList::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  .nftList::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .nftList::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-blue);
+    border-radius: 10px;
+  }
+  .imegaNft {
+    width: 50px;
+    height: auto;
+  }
+  .nft p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: var(--font-size-14);
+    color: var(--color-light-gray);
+    line-height: var(--line-height);
   }
 }
