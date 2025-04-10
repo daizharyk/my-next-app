@@ -91,6 +91,9 @@ body {
 body {
   background-color: var(--color-dark-blue);
 }
+html {
+  scroll-behavior: auto;
+}
 
 hr {
   background-color: var(--color-midnight-blue);

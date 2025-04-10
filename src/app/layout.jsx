@@ -1,5 +1,6 @@
 // app/layout.js
 import Header from "./components/Header";
+import SmoothScroll from "./components/SmoothScroll";
 import Footer from "./components/footer/Footer";
 import "./global.css";
 
@@ -15,6 +16,7 @@ export default function Layout({ children }) {
         />
       </head>
       <body>
+      <SmoothScroll />
         <Header />
         <main>{children}</main>
         <Footer />
