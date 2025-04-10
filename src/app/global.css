@@ -92,7 +92,6 @@ body {
 body {
   background-color: var(--color-dark-blue);
   overflow: hidden;
-
 }
 html {
   scroll-behavior: auto;
@@ -103,7 +102,9 @@ hr {
   height: 1px;
   border: none;
 }
-
+main {
+  overflow: auto;
+}
 .price {
   display: inline-flex;
   align-items: center;
